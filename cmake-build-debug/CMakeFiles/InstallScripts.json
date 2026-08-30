@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/OnDaYung/CLionProjects/search-engine/cmake-build-debug/cmake_install.cmake",
+		"C:/Users/OnDaYung/CLionProjects/search-engine/cmake-build-debug/_deps/json-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

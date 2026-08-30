@@ -10,13 +10,7 @@
             "result": "true"
         },
         "request002": {
-            "relevance": [
-                {
-                    "docid": 0,
-                    "rank": 1.0
-                }
-            ],
-            "result": "true"
+            "result": "false"
         }
     }
 }

@@ -1,8 +1,10 @@
 #pragma once
 #include <vector>
 #include <string>
-#include <sstream>
 #include "SearchServer.h"
+#include <nlohmann/json.hpp>
+#include <fstream>
+#include <iostream>
 
 class JsonConverter {
 public:

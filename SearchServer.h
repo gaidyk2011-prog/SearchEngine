@@ -1,6 +1,5 @@
 #pragma once
 #include <algorithm>
-#include <iostream>
 #include "InvertedIndex.h"
 #include <string>
 

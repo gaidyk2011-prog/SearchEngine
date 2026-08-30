@@ -1,0 +1,12 @@
+{
+  "config": {
+    "name": "SkillboxSearchEngine",
+    "version": "0.1",
+    "max_responses": 5
+  },
+  "files": [
+    "C:/Users/OnDaYung/Downloads/testDoc1.txt",
+    "C:/Users/OnDaYung/Downloads/testDoc2.txt",
+    "C:/Users/OnDaYung/Downloads/testDoc3.txt"
+  ]
+}

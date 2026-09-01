@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.14)
-set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
 project(search_engine)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
+
 
 FetchContent_Declare(
         json
@@ -14,17 +14,12 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(json)
 
-enable_testing()
-
-add_executable(search_engine main.cpp
-        JsonConverter.h
-        JsonConverter.cpp
-        InvertedIndex.h
-        InvertedIndex.cpp
-        SearchServer.h
-        SearchServer.cpp)
-
-target_link_libraries(search_engine
-        PRIVATE
-        nlohmann_json::nlohmann_json
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
+FetchContent_MakeAvailable(googletest)
+
+add_subdirectory(src)
+add_subdirectory(tests)
